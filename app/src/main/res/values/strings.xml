@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Gorjeta</string>
+    <string name="Custo_do_serviço">Cost of Service</string>
+    <string name="enquete">Como foi o serviço?</string>
+    <string name="Surpreendente">Amazing (20%)</string>
+    <string name="Bom">Good (18%)</string>
+    <string name="Meh">Okay (15%)</string>
+    <string name="Calcular">Calculate</string>
+    <string name="Arredondar">Round up tip?</string>
+    <string name="Valor_da_Gorjeta">Tip Amount</string>
+</resources>
