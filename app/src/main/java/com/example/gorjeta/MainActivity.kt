@@ -4,21 +4,23 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.gorjeta.databinding.ActivityMainBinding
 import java.text.NumberFormat
-import java.text.NumberFormat.*
+
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_main)
-        binding.calculateButton.setOnClickListener{calculateTip()}
+        setContentView(binding.root)
+        binding.calculateButton.setOnClickListener{ calculateTip()}
     }
+
     fun calculateTip(){
         val stringInTextField = binding.costOfService.text.toString()
         val cost = stringInTextField.toDouble()
         val selectedId = binding.tipOptions.checkedRadioButtonId
-        val tipPercentage = when (selectedId){
+        val tipPercentage = when (selectedId) {
             R.id.option_twenty_percent -> 0.20
             R.id.option_eighteen_percent -> 0.18
             else -> 0.15
@@ -29,6 +31,6 @@ class MainActivity : AppCompatActivity() {
             tip = kotlin.math.ceil (tip)
         }
         val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
-        binding.tipResult.text = getString(R.string.valor_da_gorjeta, formattedTip)
+        binding.tipResult.text = formattedTip
     }
 }

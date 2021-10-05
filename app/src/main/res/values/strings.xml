@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name">Gorjeta</string>
-    <string name="Custo_do_serviço">Cost of Service</string>
+    <string name="custo_do_serviço">Cost of Service</string>
     <string name="enquete">Como foi o serviço?</string>
-    <string name="Surpreendente">Amazing (20%)</string>
+    <string name="surpreendente">Amazing (20%)</string>
     <string name="Bom">Good (18%)</string>
     <string name="Meh">Okay (15%)</string>
-    <string name="Calcular">Calculate</string>
-    <string name="Arredondar">Round up tip?</string>
+    <string name="calcular">Calculate</string>
+    <string name="arredondar">Round up tip?</string>
     <string name="valor_da_gorjeta">Tip Amount: %s</string>
+    <string name="custo_de_servico">Custo de serviço</string>
 </resources>
